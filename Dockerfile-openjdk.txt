@@ -1,0 +1,12 @@
+
+FROM registry.redhat.io/ubi9/openjdk-21-runtime:1.21-1.1741781258
+
+VOLUME /tmp
+EXPOSE 8080
+
+WORKDIR /app
+
+# CMD "java" "-jar" "app.jar"
+ENTRYPOINT ["java", "-jar", "app.jar"]
+
+COPY --chown=root:root --chmod=444 target/app.jar app.jar
