@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Invoice</title>
+
+<style type="text/css">
+
+body {
+/*	font-family: Branda; */
+}
+
+.invoice-box {
+	width: 800px;
+	margin: auto;
+	padding: 30px;
+}
+
+.header {
+	text-align: center;
+	font-size: 24px;
+}
+
+.details {
+	margin-top: 20px;
+}
+
+.items {
+	width: 100%;
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+
+.items th, .items td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.items th {
+	background-color: #f2f2f2;
+}
+
+.total {
+	text-align: right;
+	margin-top: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+	<div class="invoice-box">
+		<div class="header">Invoice</div>
+		<div class="details">
+			<p>
+				<strong>Bill To:</strong> John Doe
+			</p>
+			<p>
+				<strong>Date:</strong> 2023-10-01
+			</p>
+		</div>
+		<table class="items">
+			<tr>
+				<th>Description</th>
+				<th>Quantity</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>Product A</td>
+				<td>2</td>
+				<td>$50</td>
+			</tr>
+			<tr>
+				<td>Product B</td>
+				<td>1</td>
+				<td>$30</td>
+			</tr>
+		</table>
+		<div class="total">
+			<p>
+				<strong>Total:</strong> $130
+			</p>
+		</div>
+	</div>
+</body>
+</html>
